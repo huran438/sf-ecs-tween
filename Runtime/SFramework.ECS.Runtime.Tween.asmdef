@@ -1,0 +1,17 @@
+{
+    "name": "SFramework.ECS.Runtime.Tween",
+    "rootNamespace": "SFramework.ECS.Runtime.Tween",
+    "references": [
+        "SFramework.Core.Runtime",
+        "SFramework.ECS.Runtime",
+        "Leopotam.EcsLite"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "versionDefines": [],
+    "noEngineReferences": false
+}
