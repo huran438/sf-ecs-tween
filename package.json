@@ -1,7 +1,7 @@
 {
   "author": "Secret Place Studio",
-  "name": "sp.sframework.ecs.tweens",
-  "displayName": "SF ECS Tweens",
+  "name": "sp.sframework.ecs.tween",
+  "displayName": "SF ECS Tween",
   "version": "0.1.0",
   "description": "ECS Tweens Module",
   "keywords": [
