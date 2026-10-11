@@ -2,8 +2,6 @@
 
 # SF ECS Tween
 
-[Documentation website](https://docs.secretplace.studio/#sf-ecs-tween)
-
 Tween component data and interpolation math for SFramework's **LeoECS Lite** integration. The package contains `MoveTo`, `RotateTo`, and `ColorTo` structs, curve helpers, and loop labels. Your project supplies the systems that advance and apply them.
 
 ![Package version](https://img.shields.io/badge/package-0.1.0-334155) ![License](https://img.shields.io/badge/license-MIT-334155)
