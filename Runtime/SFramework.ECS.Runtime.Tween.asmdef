@@ -3,8 +3,7 @@
     "rootNamespace": "SFramework.ECS.Runtime.Tween",
     "references": [
         "SFramework.Core.Runtime",
-        "SFramework.ECS.Runtime",
-        "Leopotam.EcsLite"
+        "SFramework.ECS.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

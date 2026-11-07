@@ -1,0 +1,17 @@
+{
+    "name": "SFramework.ECS.Tween.Editor.Tests",
+    "rootNamespace": "SFramework.ECS.Tween.Tests",
+    "references": [
+        "SFramework.ECS.Runtime.Tween"
+    ],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": ["UNITY_INCLUDE_TESTS"],
+    "versionDefines": [],
+    "noEngineReferences": false,
+    "optionalUnityReferences": ["TestAssemblies"]
+}

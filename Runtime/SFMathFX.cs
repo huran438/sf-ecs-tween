@@ -79,10 +79,12 @@ namespace SFramework.ECS.Runtime.Tween
         //Like Lerp with ease in ease out
         public static float SmoothStep(float x, float min, float max)
         {
+            if (min == max)
+                return x >= min ? 1f : 0f;
+
             x = Mathf.Clamp(x, min, max);
-            float v1 = (x - min) / (max - min);
-            float v2 = (x - min) / (max - min);
-            return -2 * v1 * v1 * v1 + 3 * v2 * v2;
+            float t = (x - min) / (max - min);
+            return -2 * t * t * t + 3 * t * t;
         }
 
         public static Vector2 SmoothStep(Vector2 vec, float min, float max)

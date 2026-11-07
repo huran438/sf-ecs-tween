@@ -9,7 +9,7 @@ namespace SFramework.ECS.Runtime.Tween
         /// <summary>
         /// Return value based on curve from SFMathFX class.
         /// </summary>
-        /// <returns>The value.</returns>
+        /// <returns>The interpolated value, or zero for an unknown curve.</returns>
         /// <param name="tweenAnimationCurve">Animation curve.</param>
         /// <param name="start">Start.</param>
         /// <param name="end">End.</param>
@@ -33,7 +33,7 @@ namespace SFramework.ECS.Runtime.Tween
                 case TweenAnimationCurve.Clerp:
                     return SFMathFX.CLerp(start, end, t);
                 default:
-                    return 0;
+                    return 0f;
             }
         }
 
@@ -73,32 +73,14 @@ namespace SFramework.ECS.Runtime.Tween
         /// <summary>
         /// Return value based on curve from SFMathFX class.
         /// </summary>
-        /// <returns>The value.</returns>
+        /// <returns>The interpolated value, or zero for an unknown curve.</returns>
         /// <param name="tweenAnimationCurve">Animation curve.</param>
         /// <param name="start">Start.</param>
         /// <param name="end">End.</param>
         /// <param name="t">T.</param>
         public static float CurvedValueECS(TweenAnimationCurve tweenAnimationCurve, float start, float end, float t)
         {
-            switch (tweenAnimationCurve)
-            {
-                case TweenAnimationCurve.EaseInOut:
-                    return SFMathFX.Hermite(start, end, t);
-                case TweenAnimationCurve.EaseOut:
-                    return SFMathFX.Sinerp(start, end, t);
-                case TweenAnimationCurve.EaseIn:
-                    return SFMathFX.Coserp(start, end, t);
-                case TweenAnimationCurve.Berp:
-                    return SFMathFX.Berp(start, end, t);
-                case TweenAnimationCurve.Bounce:
-                    return start + ((end - start) * SFMathFX.Bounce(t));
-                case TweenAnimationCurve.Lerp:
-                    return SFMathFX.Lerp(start, end, t);
-                case TweenAnimationCurve.Clerp:
-                    return SFMathFX.CLerp(start, end, t);
-                default:
-                    return 0f;
-            }
+            return CurvedValue(tweenAnimationCurve, start, end, t);
         }
 
         /// <summary>

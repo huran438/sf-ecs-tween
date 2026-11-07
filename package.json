@@ -3,6 +3,7 @@
   "name": "sp.sframework.ecs.tween",
   "displayName": "SF ECS Tween",
   "version": "0.1.0",
+  "unity": "6000.0",
   "description": "ECS Tweens Module",
   "keywords": [
     "ecs",
@@ -10,5 +11,9 @@
 	"tweens"
   ],
   "category": "SFramework",
+  "dependencies": {
+    "sp.sframework.core": "0.2.0",
+    "sp.sframework.ecs.odin": "0.1.0"
+  },
   "type": "library"
 }
